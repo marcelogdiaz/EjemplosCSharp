@@ -9,47 +9,76 @@ using System.Threading.Tasks;
  */
 using ConsoleAppVehiculos.Entidades;
 
+
+/// <summary>
+/// Aca comienza el codigo del Program.cs
+/// </summary>
 namespace ConsoleAppVehiculos
 {
-    internal class Program
+    public class Program
     {
-
         enum Autos
-        { Ford, Chevrolet, Fiat, Renault }
+        { Ford, Chevrolet,Fiat, Renault }
 
         public static void Main(string[] args)
         {
-
+            //Declaramos nuestra FLOTA como un diccionario
             Dictionary<Autos, int> flota = new Dictionary<Autos, int>();
 
+            //inicializamos la flota de autos en 0
             flota[Autos.Ford] = 0;
             flota[Autos.Chevrolet] = 0;
             flota[Autos.Fiat] = 0;
             flota[Autos.Renault] = 0;
 
-            //Declaramos una varible de tipo Vehiculo
-            Vehiculo miVehiculo;
-            
-            miVehiculo  = new Vehiculo("Audi",4);     
+            string x;
+            bool salir = false;
+            while (!salir) {
+                Console.WriteLine("Ingrese 0-Ford, 1-Chevrolet, 2-Fiat, 3-Renault, 4-SALIR seguido de ENTER");
+                x = Console.ReadLine();
+                switch (x)
+                {
+                    case "0":
+                        flota[Autos.Ford]++;
+                        break;
+                    case "1":
+                        flota[Autos.Chevrolet]++;
+                        break;
+                    case "2":
+                        flota[Autos.Fiat] ++;
+                        break;
+                    case "3":
+                         flota[Autos.Renault]++;
+                        break;
+                    case "4":
+                        salir = true;
+                        break;
+                }
+            }
 
-            /*
-             * Creamos un objeto de Clase Moto, si bien miVehiculo es de una clase Padre, por POLIMORFISMO es posible crear instancia de la clase Derivada
-             */
-            //miVehiculo = new Moto("Ducati", 2); 
-            miVehiculo.alinear();
-            miVehiculo.cambiarRueda();
-            miVehiculo.medirPresion();
-
-            Console.WriteLine();
+            //Mostramos la cantidad ingresada de cada vehiculo
+            Console.WriteLine($"Hay {flota[Autos.Ford]} vehiculos {Autos.Ford}" );
+            Console.WriteLine($"Hay {flota[Autos.Chevrolet]} vehiculos {Autos.Chevrolet}");
+            Console.WriteLine($"Hay {flota[Autos.Fiat]} vehiculos {Autos.Fiat}");
+            Console.WriteLine($"Hay {flota[Autos.Renault]} vehiculos {Autos.Renault}");
 
 
-            /*
-            int num;
-            num = Convert.ToInt32(Console.ReadLine());  
-             */
-
+           
             Console.WriteLine("Presione ENTER para salir");
             Console.ReadLine();
+
+            ////Declaramos una varible de tipo Vehiculo
+            //Vehiculo miVehiculo;
+
+            //miVehiculo  = new Vehiculo("Audi",4);     
+
+            ///*
+            // * Creamos un objeto de Clase Moto, si bien miVehiculo es de una clase Padre, por POLIMORFISMO es posible crear instancia de la clase Derivada
+            // */
+            ////miVehiculo = new Moto("Ducati", 2); 
+            //miVehiculo.alinear();
+            //miVehiculo.cambiarRueda();
+            //miVehiculo.medirPresion();
         }
 
     }

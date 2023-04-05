@@ -10,19 +10,38 @@ namespace S4bool
     {
         static void Main(string[] args)
         {
-            bool check = true;
-            Console.WriteLine(check ? "Checked" : "Not checked");  // output: Checked
+            bool valorBooleano = true;
 
-            Console.WriteLine(false ? "Checked" : "Not checked");  // output: Not checked
+            bool otroValorBooleano = false;
+
+            //if (valorBooleano ^  otroValorBooleano) {
+            //    Console.WriteLine("THEN");
+            //}
+            //else {
+            //    Console.WriteLine("ELSE");
+            //}
+
+            //if (valorBooleano)
+            //{
+            //    Console.WriteLine("Checked");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not checked");
+            //}
+
+            //Console.WriteLine(valorBooleano ? "Checked" : "Not checked");  // output: Checked
+
+            //Console.WriteLine(false ? "Checked" : "Not checked");  // output: Not checked
 
 
-            //-----NOT
-            bool passed = false;
-            Console.WriteLine(!passed);  // output: True
-            Console.WriteLine(!true);    // output: False
-            //------------------------------------------------------------
+            ////-----NOT
+            //bool pasa = false;
+            //Console.WriteLine(!pasa);  // output: True
+            //Console.WriteLine(!true);    // output: False
+            ////------------------------------------------------------------
 
-            //----AND
+            ////----AND
             bool SecondOperand()
             {
                 Console.WriteLine("Second operand is evaluated.");
@@ -40,17 +59,17 @@ namespace S4bool
             // Output:
             // Second operand is evaluated.
             // True
-            //------------------------------------------------------------
+            ////------------------------------------------------------------
 
-            //-----XOR
+            ////-----XOR
             Console.WriteLine(true ^ true);    // output: False
             Console.WriteLine(true ^ false);   // output: True
             Console.WriteLine(false ^ true);   // output: True
             Console.WriteLine(false ^ false);  // output: False
-            //------------------------------------------------------------
+            ////------------------------------------------------------------
 
 
-            //-----OR
+            ////-----OR
             a = true | SecondOperand();
             Console.WriteLine(a);
             // Output:
@@ -62,9 +81,9 @@ namespace S4bool
             // Output:
             // Second operand is evaluated.
             // True
-            //------------------------------------------------------------
+            ////------------------------------------------------------------
 
-            //-----AND CONDICIONAL
+            ////-----AND CONDICIONAL
             a = false && SecondOperand();
             Console.WriteLine(a);
             // Output:
@@ -75,52 +94,53 @@ namespace S4bool
             // Output:
             // Second operand is evaluated.
             // True
-            //------------------------------------------------------------
+            ////------------------------------------------------------------
 
-            //----OR CONDICIONAL
-            a = true || SecondOperand();
-            Console.WriteLine(a);
-            // Output:
-            // True
+            ////----OR CONDICIONAL
+            //a = true || SecondOperand();
+            //Console.WriteLine(a);
+            //// Output:
+            //// True
 
-            b = false || SecondOperand();
-            Console.WriteLine(b);
-            // Output:
-            // Second operand is evaluated.
-            // True
-            //------------------------------------------------------------
+            //b = false || SecondOperand();
+            //Console.WriteLine(b);
+            //// Output:
+            //// Second operand is evaluated.
+            //// True
+            ////------------------------------------------------------------
 
-            //PRECEDENCIA OPERADORES
+            ////PRECEDENCIA OPERADORES
             Console.WriteLine(true | true & false);   // output: True
             Console.WriteLine((true | true) & false); // output: False
 
-            bool Operand(string name, bool value)
-            {
-                Console.WriteLine($"Operand {name} is evaluated.");
-                return value;
-            }
+            //bool Operand(string name, bool value)
+            //{
+            //    Console.WriteLine($"Operand {name} is evaluated.");
+            //    return value;
+            //}
 
-            var byDefaultPrecedence = Operand("A", true) || Operand("B", true) && Operand("C", false);
-            Console.WriteLine(byDefaultPrecedence);
-            // Output:
-            // Operand A is evaluated.
-            // True
+            //var byDefaultPrecedence = Operand("A", true) || Operand("B", true) && Operand("C", false);
+            //Console.WriteLine(byDefaultPrecedence);
+            //// Output:
+            //// Operand A is evaluated.
+            //// True
 
-            var changedOrder = (Operand("A", true) || Operand("B", true)) && Operand("C", false);
-            Console.WriteLine(changedOrder);
-            // Output:
-            // Operand A is evaluated.
-            // Operand C is evaluated.
-            // False
-            //------------------------------------------------------------
+            //var changedOrder = (Operand("A", true) || Operand("B", true)) && Operand("C", false);
+            //Console.WriteLine(changedOrder);
+            //// Output:
+            //// Operand A is evaluated.
+            //// Operand C is evaluated.
+            //// False
+            ////------------------------------------------------------------
 
-            //---OPERADOR TERNARIO
-            string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
+            ////---OPERADOR TERNARIO
+            //string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
 
-            Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
-            Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!
+            //Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
+            //Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!
 
 
+            Console.WriteLine("PRESIONE ENTER PARA CONTINUAR");
             Console.ReadLine();
 
         }
