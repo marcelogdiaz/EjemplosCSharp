@@ -20,8 +20,14 @@ namespace ConsoleAppVehiculos
         enum Autos
         { Ford, Chevrolet,Fiat, Renault }
 
+        //public static void Main()
         public static void Main(string[] args)
         {
+
+            //Muestra la cantidad de parametros (separados por espacio) que se llaman en....
+            //<DIRECTORIO>\ConsoleAppVehiculos.exe parametro1 parametro2 parametro3
+            Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
+
             //Declaramos nuestra FLOTA como un diccionario
             Dictionary<Autos, int> flota = new Dictionary<Autos, int>();
 
@@ -63,7 +69,8 @@ namespace ConsoleAppVehiculos
             Console.WriteLine($"Hay {flota[Autos.Renault]} vehiculos {Autos.Renault}");
 
 
-           
+            //Console.WriteLine((int)Autos.Ford);   //permite acceder al INDICE del ENUMERADO
+
             Console.WriteLine("Presione ENTER para salir");
             Console.ReadLine();
 
