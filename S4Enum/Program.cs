@@ -17,14 +17,19 @@ namespace S4Enum
                         Saturday,
                         Sunday
                     }
+
         static void Main(string[] args)
         {
             Console.WriteLine(WeekDays.Friday); //output: Friday 
 
             int day = (int)WeekDays.Friday; // enum to int conversion
             Console.WriteLine(day); //output: 4 
-		
+
             var wd = (WeekDays)5; // int to enum conversion
+            //WeekDays wd = (WeekDays)5; // int to enum conversion
+
+            //Console.WriteLine(wd.GetType());//output: Saturday 
+            //Console.WriteLine(wd.GetTypeCode());//output: Saturday 
             Console.WriteLine(wd);//output: Saturday 
 
 
@@ -37,6 +42,9 @@ namespace S4Enum
             {
                 Console.WriteLine("It's a weekday.");
             }
+
+            Console.Write("Una cosa \n");
+            Console.Write("Otra cosa");
 
             Console.WriteLine("Presione ENTER para salir");
             Console.ReadLine();

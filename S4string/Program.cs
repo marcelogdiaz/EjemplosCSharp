@@ -10,69 +10,84 @@ namespace S4string
     {
         static void Main(string[] args)
         {
+            //string a = "hello";
+            //string b = "h";
+            //// Append to contents of 'b'
+            //b += "ello";
 
-            //IGUALDAD
-            string a = "hello";
-            string b = "h";
-            // Append to contents of 'b'
-            b += "ello";
-            Console.WriteLine(a == b);
-            Console.WriteLine(object.ReferenceEquals(a, b));
+            ////IGUALDAD
+            //Console.WriteLine(a == b);
+            //Console.WriteLine(object.ReferenceEquals(a, b));
+
+            //string c = "algo";
+            //b = c;
+            
+            //a = b;
+
+            
+            //Console.WriteLine("A apunta C");
+            //Console.WriteLine(object.ReferenceEquals(a, c));
+
+            //b = "chau";
+            //Console.WriteLine(object.ReferenceEquals(a, b));
+
 
             //CREACION DE STRING
             //from string literal and string concatenation
-            string fname, lname;
-            fname = "Rowan";
-            lname = "Atkinson";
+            //string fname, lname;
+            //fname = "Rowan";
+            //lname = "Atkinson";
 
-            char[] letters = { 'H', 'e', 'l', 'l', 'o' };
-            string[] sarray = { "Hello", "From", "UPSO", "C#" };
+            //char[] letters = { 'H', 'e', 'l', 'l', 'o' };
+            //string[] sarray = { "Hello", "From", "UPSO", "C#" };
 
-            string fullname = fname + lname;
-            Console.WriteLine("Full Name: {0}", fullname);
+            //string fullname = fname + lname;
+            //Console.WriteLine("Full Name: {0}", fullname);
 
-            //by using string constructor { 'H', 'e', 'l', 'l','o' };
-            string greetings = new string(letters);
-            Console.WriteLine("Greetings: {0}", greetings);
+            ////by using string constructor { 'H', 'e', 'l', 'l','o' };
+            //string greetings = new string(letters);
+            //Console.WriteLine("Greetings: {0}", greetings);
 
-            //methods returning string { "Hello", "From", "Tutorials", "Point" };
-            string message = String.Join(" ", sarray);
-            Console.WriteLine("Message: {0}", message);
+            ////methods returning string { "Hello", "From", "Tutorials", "Point" };
+            //string message = String.Join(" ", sarray);
+            //Console.WriteLine("Message: {0}", message);
 
-            //formatting method to convert a value
-            DateTime waiting = new DateTime(2012, 10, 10, 17, 58, 1);
-            string chat = String.Format("Message sent at {0:t} on {0:D}", waiting);
-            Console.WriteLine("Message: {0}", chat);
+            ////formatting method to convert a value
+            //DateTime waiting = new DateTime(2012, 10, 10, 17, 58, 1);
+            //string chat = String.Format("Message sent at {0:t} on {0:D}", waiting);
+            //Console.WriteLine("Message: {0}", chat);
 
-            //INMUTABILIDAD---------
-            string str1 = "Hello ";
-            string str2 = str1;
-            str1 += "World";
+            ////INMUTABILIDAD---------
+            //string str1 = "Hello ";
+            //string str2 = str1;
+            //str1 += "World";
 
-            Console.WriteLine(str2);
-            //Output: Hello
+            //Console.WriteLine(str2);
+            ////Output: Hello
 
 
-            //LITERALES-------------------
-            string columns = "Column 1\tColumn 2\tColumn 3";
-            Console.WriteLine(columns);
+            ////LITERALES-------------------
+            //string columns = "Column 1\tColumn 2\tColumn 3";
+            //Console.WriteLine(columns);
 
-            string rows = "Row 1\r\nRow 2\r\nRow 3";
-            Console.WriteLine(rows);
+            //string rows = "Row 1\r\nRow 2\nRow 3";
+            //Console.WriteLine(rows);
+            //Console.WriteLine(rows.Count());
+            //Console.WriteLine(rows.Length);
 
-            string title = "\"The \u00C6olean Harp\", by Samuel Taylor Coleridge";
-            Console.WriteLine(title);
+            //string title = "\"The \u00C6olean Harp\", by Samuel Taylor Coleridge";
+            //Console.WriteLine(title);
 
-            string filePath = @"C:\Users\scoleridge\Documents\";
-            Console.WriteLine(filePath);
+            //string filePath = @"C:\Users\scoleridge\Documents\";
+            //Console.WriteLine(filePath);
 
-            string text = @"My pensive SARA ! thy soft cheek reclined
-                        Thus on mine arm, most soothing sweet it is
-                        To sit beside our Cot,...";
-            Console.WriteLine(text);
+            //string text = @"My pensive SARA ! thy soft cheek reclined
+            //            Thus on mine arm, most soothing sweet it is
+            //            To sit beside our Cot,...";
+            //Console.WriteLine(text);
 
-            string quote = @"Her name was ""Sara.""";
-            Console.WriteLine(quote);
+            //string quote = @"Her name was ""Sara.""";
+            //Console.WriteLine(quote);
 
 
             //------INTERPOLACION
@@ -83,14 +98,18 @@ namespace S4string
 
             //SUBCADENAS
             string s3 = "Visual C# Express";
+            System.Console.WriteLine(s3.Substring(7));
             System.Console.WriteLine(s3.Substring(7, 2));
+            System.Console.WriteLine(s3.Substring(0, 2));
+            System.Console.WriteLine(s3.Substring(1, 2));
             // Output: "C#"
 
+            string palabra = s3.Replace("C#", "Basic");
             System.Console.WriteLine(s3.Replace("C#", "Basic"));
             // Output: "Visual Basic Express"
 
             // Index values are zero-based
-            int index = s3.IndexOf("C");
+            int index = s3.IndexOf("s");
             // index = 7
 
             Console.ReadLine();

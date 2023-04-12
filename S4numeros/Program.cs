@@ -24,10 +24,6 @@ namespace S4numeros
 
             //Console.WriteLine(FullProductName);
 
-
-
-
-
             //Console.WriteLine($"int.MinValue = {int.MinValue}");
             //Console.WriteLine($"int.MaxValue = {int.MaxValue}");
             //Console.WriteLine($"float.MinValue = {float.MinValue}");
@@ -41,24 +37,33 @@ namespace S4numeros
             //Console.WriteLine($"long.MinValue = {long.MinValue}");
             //Console.WriteLine($"long.MaxValue = {long.MaxValue}");
 
+            //double numdouble = 3.78;
 
-            double numdouble = 3.78;
+            //decimal division(decimal d1, decimal d2) {
+            //    decimal resul = 0;
+            //    resul = d1 / d2;
+            //    return resul;
+            //}
 
-            decimal division(decimal d1, decimal d2) {
-                decimal resul = 0;
-                resul = d1 / d2;
-                return resul;
-            }
+            //decimal numdecimal = 3.78M;
+            //int entero;
 
-            decimal numdecimal = 3.78M;
-            int entero;
+            //entero = (int)numdouble;
 
-            entero = (int)numdouble;
+            //entero = (int)numdecimal;
 
-            entero = (int)numdecimal;
+            //int resultado;
+            //resultado = (int)division(8, 3);
 
-            int resultado;
-            resultado = (int)division(8, 3);
+            int i = 3;
+            int j = i++;
+
+            int k = ++i;
+
+            int l = 5;
+            //l += 9;
+            
+            l =+ 9;
 
             Console.ReadLine();
 
