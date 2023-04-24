@@ -8,72 +8,86 @@ namespace S6_EC_SWITCH
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
 
-            // EJEMPLO SIMPLE
-            string subject = "C#";
+            //// EJEMPLO SIMPLE
+            //string subject = "C#";
+            //// passing string "subject" in
+            //// switch statement
+            //switch (subject)
+            //{
+            //    case "Java":
+            //        Console.WriteLine("Subject is Java");
+            //        break;
 
-            // passing string "subject" in
-            // switch statement
-            switch (subject)
+            //    case "C++":
+            //        Console.WriteLine("Subject is C++");
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("Subject is C#");
+            //        break;
+            //}
+
+            //int valor = 0;
+            //switch (valor)
+            //{
+            //    case 0:
+            //        Console.WriteLine("El valor es CERO");
+            //        break;
+            //    default:
+            //        if (valor > 0) {
+            //            Console.WriteLine("El valor es MAYOR QUE CERO");
+            //        }
+            //        else {
+            //            Console.WriteLine("El valor es MENOR QUE CERO");
+            //        }
+            //        break;
+            //}
+
+            //EJEMPLO DOS
+
+            // taking two strings value
+            string topic;
+            string category;
+
+            // taking topic name
+            topic = "inheritance";
+
+            // using switch statement
+            switch (topic)
             {
+                case "introduction to c#":
+                case "variables":
+                case "data types":
 
-                case "Java":
-                    Console.WriteLine("Subject is Java");
+                    category = "basic";
                     break;
 
-                case "C++":
-                    Console.WriteLine("Subject is C++");
+                case "loops":
+                case "if statements":
+                case "jump statements":
+
+                    category = "control flow";
                     break;
 
+                case "class & object":
+                case "inheritance":
+                case "constructors":
+
+                    category = "oops concept";
+                    break;
+
+                // default case 
                 default:
-                    Console.WriteLine("Subject is C#");
+                    category = "not mentioned";
                     break;
 
             }
 
-            //EJEMPLO DOS
-
-            //// taking two strings value
-            //string topic;
-            //string category;
-
-            //// taking topic name
-            //topic = "Inheritance";
-
-            //// using switch Statement
-            //switch (topic)
-            //{
-            //    case "Introduction to C#":
-            //    case "Variables":
-            //    case "Data Types":
-
-            //        category = "Basic";
-            //        break;
-
-            //    case "Loops":
-            //    case "If Statements":
-            //    case "Jump Statements":
-
-            //        category = "Control Flow";
-            //        break;
-
-            //    case "Class & Object":
-            //    case "Inheritance":
-            //    case "Constructors":
-
-            //        category = "OOPS Concept";
-            //        break;
-
-            //    // default case 
-            //    default:
-            //        category = "Not Mentioned";
-            //        break;
-
-            //}
-
-            //System.Console.Write("Category is " + category);
+            Console.WriteLine("category is " + category);
 
             Console.ReadLine();
         }

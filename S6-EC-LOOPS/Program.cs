@@ -13,10 +13,10 @@ namespace S6_EC_LOOPS
             //WHILE
             int x = 1;
 
-            // Exit when x becomes greater than 4
+            //// Exit when x becomes greater than 4
             while (x <= 4)
             {
-                Console.WriteLine("WHILE");
+                Console.WriteLine($"{x} WHILE");
 
                 // Increment the value of x for
                 // next iteration
@@ -24,22 +24,28 @@ namespace S6_EC_LOOPS
             }
 
 
-            ////DO WHILE
-            //x = 21;
+            //DO WHILE
+            //x = 18;
             //do
             //{
             //    // The line will be printed even
             //    // if the condition is false
-            //    Console.WriteLine("DO WHILE");
+            //    Console.WriteLine($"DO WHILE {x}");
             //    x++;
             //}
             //while (x < 20);
 
-            ////NESTED FOR
+            //int maxTabla = 10;
+
+            //////NESTED FOR
             //// loop within loop printing GeeksforGeeks
-            //for (int i = 2; i < 3; i++)
-            //    for (int j = 1; j < i; j++)
+            //for (int i = 0; i <= maxTabla; i++)
+            //{
+            //    for (int j = 0; j <= maxTabla; j++)
+            //    {
             //        Console.WriteLine($"{i} {j} LOOP");
+            //    }                
+            //}
 
             Console.ReadLine();
         }
