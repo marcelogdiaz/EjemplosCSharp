@@ -68,8 +68,14 @@ namespace S7_ED_MULTI_ARRAY
             // using nested loop show string elements
             Console.WriteLine("To String element");
             for (int i = 0; i < 4; i++)
+            {
                 for (int j = 0; j < 2; j++)
+                {
                     Console.Write(str[i, j] + " ");
+                    //Console.Write(str);
+                }
+                Console.WriteLine();
+            }
 
             Console.ReadLine();
         }
