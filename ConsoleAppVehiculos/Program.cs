@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * Importamos ConsoleAppVehiculos.Entidades para poder utilizar las Clases que se encuentran en la carpeta Entidades
+ * Importamos S8_CLASES.Entidades para poder utilizar las Clases que se encuentran en la carpeta Entidades
  */
-using ConsoleAppVehiculos.Entidades;
+using S8_CLASES.Entidades;
 
 
 /// <summary>
 /// Aca comienza el codigo del Program.cs
 /// </summary>
-namespace ConsoleAppVehiculos
+namespace S8_CLASES
 {
     public class Program
     {
@@ -24,7 +24,7 @@ namespace ConsoleAppVehiculos
         public static void Main(string[] args)
         {
             //Muestra la cantidad de parametros (separados por espacio) que se llaman en....
-            //<DIRECTORIO>\ConsoleAppVehiculos.exe parametro1 parametro2 parametro3
+            //<DIRECTORIO>\S8_CLASES.exe parametro1 parametro2 parametro3
             Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
 
             List<Autos> miFlotaAutos = new List<Autos>();
@@ -44,7 +44,7 @@ namespace ConsoleAppVehiculos
 
 
             ////Muestra la cantidad de parametros (separados por espacio) que se llaman en....
-            ////<DIRECTORIO>\ConsoleAppVehiculos.exe parametro1 parametro2 parametro3
+            ////<DIRECTORIO>\S8_CLASES.exe parametro1 parametro2 parametro3
             //Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
 
             ////Declaramos nuestra FLOTA como un diccionario

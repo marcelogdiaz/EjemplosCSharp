@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppVehiculos.Entidades
+namespace S8_CLASES.Entidades
 {
     public class Moto : Vehiculo    //Heredamos de la clase VEHICULO
     {

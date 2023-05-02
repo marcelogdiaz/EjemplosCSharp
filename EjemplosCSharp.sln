@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppVehiculos", "ConsoleAppVehiculos\ConsoleAppVehiculos.csproj", "{0340EE70-ECE5-4560-A84F-5D8F21A08551}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S8-CLASES", "ConsoleAppVehiculos\S8-CLASES.csproj", "{0340EE70-ECE5-4560-A84F-5D8F21A08551}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S4bool", "S4bool\S4bool.csproj", "{CED311CA-E97C-4E74-9C5D-DA19F3CE5849}"
 EndProject
