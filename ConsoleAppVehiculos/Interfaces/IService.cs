@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /*
  * El Espacio de Nombre lo arma de manera automatica concatenando el nombre del proyecto y el nombre de la carpeta contenedora
  */
-namespace S8_CLASES.Interfaces
+namespace S8_CLASES2.Interfaces
 {
     /// <summary>
     /// Es una Interface que describe el comportamiento de un SERVICE de un Vehiculo

@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * Importamos S8_CLASES.Interfaces para poder implementar IService y darle comportamiento a Vehiculo
+ * Importamos S8_CLASES2.Interfaces para poder implementar IService y darle comportamiento a Vehiculo
  */
-using S8_CLASES.Interfaces;
+using S8_CLASES2.Interfaces;
 
-namespace S8_CLASES.Entidades
+namespace S8_CLASES2.Entidades
 {
     public class Vehiculo : IService    //Aca indicamos que implementamos la Interfaz
     {

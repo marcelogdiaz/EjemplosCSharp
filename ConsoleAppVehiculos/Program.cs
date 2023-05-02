@@ -5,27 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * Importamos S8_CLASES.Entidades para poder utilizar las Clases que se encuentran en la carpeta Entidades
+ * Importamos S8_CLASES2.Entidades para poder utilizar las Clases que se encuentran en la carpeta Entidades
  */
-using S8_CLASES.Entidades;
+using S8_CLASES2.Entidades;
 
 
 /// <summary>
 /// Aca comienza el codigo del Program.cs
 /// </summary>
-namespace S8_CLASES
+namespace S8_CLASES2
 {
     public class Program
     {
         enum Autos
         { Ford, Chevrolet,Fiat, Renault }
-
-        //public static void Main()
         public static void Main(string[] args)
         {
             //Muestra la cantidad de parametros (separados por espacio) que se llaman en....
-            //<DIRECTORIO>\S8_CLASES.exe parametro1 parametro2 parametro3
-            Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
+            //<DIRECTORIO>\S8_CLASES2.exe parametro1 parametro2 parametro3
+            //Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
 
             List<Autos> miFlotaAutos = new List<Autos>();
 
@@ -42,10 +40,6 @@ namespace S8_CLASES
                 contador++;
             }
 
-
-            ////Muestra la cantidad de parametros (separados por espacio) que se llaman en....
-            ////<DIRECTORIO>\S8_CLASES.exe parametro1 parametro2 parametro3
-            //Console.WriteLine("Cantidad de parametros ARGS {0}", args.Count());
 
             ////Declaramos nuestra FLOTA como un diccionario
             //Dictionary<Autos, int> flota = new Dictionary<Autos, int>();
@@ -90,8 +84,6 @@ namespace S8_CLASES
 
             //Console.WriteLine((int)Autos.Ford);   //permite acceder al INDICE del ENUMERADO
 
-            Console.WriteLine("Presione ENTER para salir");
-            Console.ReadLine();
 
             ////Declaramos una varible de tipo Vehiculo
             //Vehiculo miVehiculo;
@@ -105,6 +97,9 @@ namespace S8_CLASES
             //miVehiculo.alinear();
             //miVehiculo.cambiarRueda();
             //miVehiculo.medirPresion();
+
+            Console.WriteLine("Presione ENTER para salir");
+            Console.ReadLine();
         }
 
     }
