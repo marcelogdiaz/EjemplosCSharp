@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S7-ED-MULTI_ARRAY", "S7-ED-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S7-ED-JAGGED_ARRAY", "S7-ED-JAGGED_ARRAY\S7-ED-JAGGED_ARRAY.csproj", "{83FDD3D6-BE9C-4C2B-90D4-D4F3EA223058}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S8-CLASES1", "S8-CLASES1\S8-CLASES1.csproj", "{CCAAD0A9-2503-4B88-9400-E242A08C3FB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{83FDD3D6-BE9C-4C2B-90D4-D4F3EA223058}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83FDD3D6-BE9C-4C2B-90D4-D4F3EA223058}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83FDD3D6-BE9C-4C2B-90D4-D4F3EA223058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAAD0A9-2503-4B88-9400-E242A08C3FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAAD0A9-2503-4B88-9400-E242A08C3FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAAD0A9-2503-4B88-9400-E242A08C3FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAAD0A9-2503-4B88-9400-E242A08C3FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
