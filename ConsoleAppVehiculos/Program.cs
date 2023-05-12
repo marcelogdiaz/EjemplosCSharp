@@ -85,18 +85,24 @@ namespace S8_CLASES2
             //Console.WriteLine((int)Autos.Ford);   //permite acceder al INDICE del ENUMERADO
 
 
-            ////Declaramos una varible de tipo Vehiculo
-            //Vehiculo miVehiculo;
+            //Declaramos una varible de tipo Vehiculo
+            Vehiculo miVehiculo;
 
-            //miVehiculo  = new Vehiculo("Audi",4);     
+            //miVehiculo = new Vehiculo("Audi", 4);
 
-            ///*
-            // * Creamos un objeto de Clase Moto, si bien miVehiculo es de una clase Padre, por POLIMORFISMO es posible crear instancia de la clase Derivada
-            // */
-            ////miVehiculo = new Moto("Ducati", 2); 
-            //miVehiculo.alinear();
-            //miVehiculo.cambiarRueda();
-            //miVehiculo.medirPresion();
+            /*
+             * Creamos un objeto de Clase Moto, si bien miVehiculo es de una clase Padre, por POLIMORFISMO es posible crear instancia de la clase Derivada
+             */
+
+
+            //Moto miVehiculo;
+            miVehiculo = new Moto("Ducati", 2, "rojo"); 
+            miVehiculo.alinear();
+            miVehiculo.cambiarRueda();
+            miVehiculo.medirPresion();
+
+
+
 
             Console.WriteLine("Presione ENTER para salir");
             Console.ReadLine();

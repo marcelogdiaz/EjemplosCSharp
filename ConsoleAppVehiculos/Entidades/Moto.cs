@@ -8,14 +8,19 @@ namespace S8_CLASES2.Entidades
 {
     public class Moto : Vehiculo    //Heredamos de la clase VEHICULO
     {
+
+        string color;
+
         /// <summary>
         /// Constructor de la clase
         /// BASE significa que llama al constructor de la clase PADRE
         /// </summary>
         /// <param name="m"></param>
         /// <param name="cantRuedas"></param>
-        public Moto(string m, int cantRuedas) : base(m, cantRuedas)
+        public Moto(string m, int cantRuedas, string c) : base(m, cantRuedas)
         {
+            this.color = c;
+
         }
 
         /// <summary>
@@ -33,5 +38,10 @@ namespace S8_CLASES2.Entidades
         {
             Console.WriteLine("Cambiamos {0} rueda {1} en MOTO", cantidadRuedas, marca);
         }
+
+        public void medirPresion() {
+            Console.WriteLine("Medimos presion {0} moto", marca);
+        }
+
     }
 }
