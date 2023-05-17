@@ -31,26 +31,61 @@ namespace S8_CLASES1
             Seleccion seleccionArgentina;
             Seleccion seleccionBrasilera;
             Jugador j10 = new Jugador("Lionel", "Messi", 36, "delantero");
+            Referi arbitro = new Referi("Juan","Herrera", 45, "Arbitro");
 
-            seleccionArgentina = new Seleccion("Scaloni","Argentina","Argentina","CelesteYBlanca");
-            seleccionBrasilera = new Seleccion("Tite", "Brasil", "Brasil", "VerdeAmarella");
 
-            seleccionArgentina.AgregarJugador(j10);
-            seleccionArgentina.AgregarJugador(new Jugador("Dibu","Martinez",33,"arquero"));
+            List<Persona> fecha1 = new List<Persona>();
 
-            seleccionBrasilera.AgregarJugador(new Jugador("Junior", "Neymar", 28, "delantero"));
-            seleccionBrasilera.AgregarJugador(new Jugador("Filip", "Coutinho", 28, "delantero"));
-
-            foreach (Jugador j in seleccionArgentina.plantel) {
-                Console.WriteLine($"{j.Apellido} - {j.Edad} - {j.Posicion}");
+            //cargar equipo Local
+            for (int i = 1; i < 12; i++)
+            {
+                fecha1.Add(new Jugador($"JLocal{i}", $"ApLocal{i}",25,i.ToString()));
             }
 
-            Console.WriteLine("PRIMERA RONDA");
-            Console.WriteLine ("RESULTADO: "+ e1.Cotejo(seleccionBrasilera, seleccionArgentina));
-            Console.ReadLine();
+            //cargar equipo Visitante
+            for (int i = 1; i < 12; i++)
+            {
+                fecha1.Add(new Jugador($"JVisitante{i}", $"ApVisitante{i}", 25, i.ToString()));
+            }
+            //cargar arbitros
+            fecha1.Add(new Referi("Ref1","ApRef1",35,"Principal"));
+            fecha1.Add(new Referi("Juez1", "ApJuez1", 35, "LineMan"));
+            fecha1.Add(new Referi("Juez2", "ApJuez2", 35, "LineMan"));
+            fecha1.Add(new Referi("VAR", "ApVAR", 35, "VAR"));
 
-            Console.WriteLine("SEGUNDA RONDA");
-            Console.WriteLine("RESULTADO: " + e2.Cotejo(seleccionArgentina, seleccionBrasilera));
+            //j10.Precalentar();
+            //j10.Falta();
+
+            //arbitro.Precalentar();
+            //arbitro.Falta();
+
+            Random valor = new Random();
+            int ivalor = valor.Next(0,25);
+
+            //OCURRE el POLIMORFISMO
+            fecha1.ElementAt(ivalor).Precalentar();
+
+
+            //seleccionArgentina = new Seleccion("Scaloni","Argentina","Argentina","CelesteYBlanca");
+            //seleccionBrasilera = new Seleccion("Tite", "Brasil", "Brasil", "VerdeAmarella");
+
+            //seleccionArgentina.AgregarJugador(j10);
+            //seleccionArgentina.AgregarJugador(new Jugador("Dibu","Martinez",33,"arquero"));
+
+            //seleccionBrasilera.AgregarJugador(new Jugador("Junior", "Neymar", 28, "delantero"));
+            //seleccionBrasilera.AgregarJugador(new Jugador("Filip", "Coutinho", 28, "delantero"));
+
+            //foreach (Jugador j in seleccionArgentina.plantel) {
+            //    Console.WriteLine($"{j.Apellido} - {j.Edad} - {j.Posicion}");
+            //}
+
+            //Console.WriteLine("PRIMERA RONDA");
+            //Console.WriteLine ("RESULTADO: "+ e1.Cotejo(seleccionBrasilera, seleccionArgentina));
+            //Console.ReadLine();
+
+            //Console.WriteLine("SEGUNDA RONDA");
+            //Console.WriteLine("RESULTADO: " + e2.Cotejo(seleccionArgentina, seleccionBrasilera));
+
             Console.WriteLine("presione enter ");
             Console.ReadLine();
 

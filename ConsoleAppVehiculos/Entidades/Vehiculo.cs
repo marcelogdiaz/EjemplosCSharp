@@ -47,7 +47,7 @@ namespace S8_CLASES2.Entidades
         /// </summary>
         public virtual void cambiarRueda()
         {
-            Console.WriteLine("Cambiamos {0} rueda {1}",cantidadRuedas, marca);
+            Console.WriteLine("Cambiamos {0} rueda {1}", cantidadRuedas, marca);
         }
 
         /// <summary>

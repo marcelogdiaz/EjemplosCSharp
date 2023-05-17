@@ -45,7 +45,11 @@
   <ItemGroup>
     <Compile Include="Entidades\Estadio.cs" />
     <Compile Include="Entidades\Jugador.cs" />
+    <Compile Include="Entidades\Persona.cs" />
+    <Compile Include="Entidades\Referi.cs" />
     <Compile Include="Entidades\Seleccion.cs" />
+    <Compile Include="Interfaces\IPersona.cs" />
+    <Compile Include="Interfaces\ISancion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
